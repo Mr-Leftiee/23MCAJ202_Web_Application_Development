@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url("/Exp/asset/p9.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+
+      nav {
+        text-align: center;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      a {
+        margin: 0 20px;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+      }
+
+      button {
+        margin-left: 50px;
+        height: 35px;
+        border: none;
+        background-color: #ff5733;
+        color: white;
+        font-size: 16px;
+        padding: 5px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      form {
+        background: rgba(255, 255, 255, 0.2);
+        border: 3px solid black;
+        width: 450px;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 60px auto;
+        margin-top: 140px;
+      }
+
+      label {
+        font-size: 18px;
+        display: block;
+        margin: 10px 0 5px 20px;
+      }
+
+      input,
+      textarea {
+        width: 90%;
+        margin-left: 20px;
+        padding: 8px;
+        border-radius: 8px;
+        border: 2px solid black;
+      }
+
+      input[type="submit"] {
+        display: block;
+        margin: 20px auto;
+        width: 50%;
+        cursor: pointer;
+        background-color: #ff5733;
+        color: white;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Contact us</a>
+        <button>Sign up</button>
+      </nav>
+    </header>
+    <form>
+      <label>User Name:</label>
+      <input type="text" placeholder="Enter your username" required />
+
+      <label>Enter Email:</label>
+      <input
+        type="email"
+        placeholder="Enter your email"
+        required
+        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+      />
+
+      <label>Comment:</label>
+      <textarea placeholder=""></textarea>
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
